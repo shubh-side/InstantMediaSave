@@ -1,49 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- SEO Meta Tags - Minimal additions -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Instagram Content Downloader - Download Reels, Posts, Stories</title>
-<meta name="description" content="Download Instagram reels, photos, videos and stories instantly. Free online Instagram content downloader for personal use.">
-<meta name="keywords" content="instagram downloader, download instagram reels, save instagram stories, instagram video downloader">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://instantmediasave.com/">
-
-<!-- Original styles -->
-<link rel="stylesheet" href="style.css">
+    <!-- Enhanced SEO Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Instagram Reels & Photos - Free Instagram Video Downloader</title>
+    <meta name="description" content="Download Instagram reels, photos, videos and stories instantly. Free online tool to save Instagram content. Works with public posts, stories, carousels, and reels.">
+    <meta name="keywords" content="download instagram reels, download instagram photos, instagram reels downloader, save instagram videos, instagram story downloader, download instagram posts, instagram media downloader">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://instantmediasave.com/">
+    
+    <!-- OpenGraph tags for social sharing -->
+    <meta property="og:title" content="Download Instagram Reels & Photos - Free Instagram Video Downloader">
+    <meta property="og:description" content="Download Instagram reels, photos, videos and stories instantly. Free online tool to save Instagram content.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://instantmediasave.com/">
+    
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Download Instagram Reels & Photos">
+    <meta name="twitter:description" content="Free Instagram content downloader for reels, photos, and videos">
+    
+    <!-- Original styles -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "InstantMediaSave - Instagram Downloader",
+      "description": "Download Instagram reels, photos, videos and stories instantly",
+      "url": "https://instantmediasave.com/",
+      "applicationCategory": "MediaApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
 </head>
 <body>
-<div class="container">
-<h1>Instagram Content Downloader</h1>
-<p class="subtitle">Download reels, images, and stories from Instagram</p>
-<div class="input-container">
-<input type="text" id="reelUrl" placeholder="Paste Instagram URL (reel, post, or story)...">
-<button id="downloadBtn">Download</button>
-</div>
-<div id="status" class="status"></div>
-<div id="downloadAllContainer" class="download-all-container hidden">
-<p>This might be a post with multiple images/videos.</p>
-<button id="downloadAllBtn" class="secondary-button">Download All Content</button>
-</div>
-<div id="downloadArea" class="download-area hidden">
-<div class="preview-container">
-<video id="videoPreview" controls class="hidden preview-media"></video>
-<img id="imagePreview" class="hidden preview-media">
-</div>
-<a id="downloadLink" class="download-button hidden">Download Content</a>
-</div>
-<div class="info-section">
-<h3>Supported Instagram Content:</h3>
-<ul>
-<li>Reels - Short video clips</li>
-<li>Posts - Single images and videos</li>
-<li>Carousel Posts - Multiple images/videos</li>
-<li>Stories - Temporary content (must be public)</li>
-</ul>
-<p class="disclaimer">Note: This tool is for personal use only. Please respect copyright and Instagram's Terms of Service.</p>
-</div>
-</div>
-<script src="script.js"></script>
+    <div class="container">
+        <h1>Instagram Content Downloader</h1>
+        <p class="subtitle">Download reels, images, and stories from Instagram</p>
+        
+        <div class="input-container">
+            <input type="text" id="reelUrl" placeholder="Paste Instagram URL (reel, post, or story)...">
+            <button id="downloadBtn">Download</button>
+        </div>
+        
+        <div id="status" class="status"></div>
+        
+        <div id="downloadAllContainer" class="download-all-container hidden">
+            <p>This might be a post with multiple images/videos.</p>
+            <button id="downloadAllBtn" class="secondary-button">Download All Content</button>
+        </div>
+        
+        <div id="downloadArea" class="download-area hidden">
+            <div class="preview-container">
+                <video id="videoPreview" controls class="hidden preview-media"></video>
+                <img id="imagePreview" class="hidden preview-media" alt="Instagram content preview">
+            </div>
+            <a id="downloadLink" class="download-button hidden">Download Content</a>
+        </div>
+        
+        <!-- SEO-optimized content sections -->
+        <div class="info-section">
+            <h2>How to Download Instagram Reels, Photos, and Videos</h2>
+            <p>InstantMediaSave is a free online tool to download Instagram content. Simply paste the URL of any public Instagram post, reel, or story to save it instantly.</p>
+            
+            <h3>Supported Instagram Content Types:</h3>
+            <ul>
+                <li><strong>Download Instagram Reels</strong> - Save short vertical videos and trending content</li>
+                <li><strong>Download Instagram Photos</strong> - Save single images and picture posts</li>
+                <li><strong>Download Instagram Videos</strong> - Save video posts and content</li>
+                <li><strong>Download Instagram Carousel Posts</strong> - Save multiple images/videos from a single post</li>
+                <li><strong>Download Instagram Stories</strong> - Save temporary content (must be public)</li>
+            </ul>
+            
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-section">
+                <h4>How to download Instagram reels?</h4>
+                <p>To download Instagram reels, simply copy the reel's URL from Instagram, paste it into our downloader, and click download. You can save reels in high quality directly to your device.</p>
+                
+                <h4>How to download Instagram photos?</h4>
+                <p>Downloading Instagram photos is easy - copy the post URL, paste it here, and click download. Our tool works with single photos and carousel posts with multiple images.</p>
+                
+                <h4>Is it legal to download Instagram content?</h4>
+                <p>Downloading public Instagram content for personal use is generally acceptable. However, always respect copyright laws and Instagram's terms of service. This tool is for personal use only.</p>
+            </div>
+            
+            <p class="disclaimer">Note: This tool is for personal use only. Please respect copyright and Instagram's Terms of Service.</p>
+        </div>
+    </div>
+    <div style="display: none;">
+        <h2>Instagram Reel Downloader</h2>
+        <h2>Instagram Photo Downloader</h2>
+        <h2>Save Instagram Videos Online</h2>
+        <p>Download Instagram content online free. Save reels, photos, and videos from Instagram. Best Instagram downloader tool.</p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
