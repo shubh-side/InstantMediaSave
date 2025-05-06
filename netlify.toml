@@ -9,7 +9,37 @@
     Access-Control-Allow-Methods = "GET, POST, OPTIONS"
     Access-Control-Allow-Headers = "Content-Type"
 
-[redirects]
+[[redirects]]
+  from = "/reels-download"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/photos-download"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/stories-download"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/igtv-download"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/carousel-download"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/videos-download"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
