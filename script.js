@@ -35,6 +35,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         try {
+            // Disable the download button and change text to show loading
+            downloadBtn.disabled = true;
+            downloadBtn.textContent = 'Fetching...';
             // Show loading status with different messages based on content type
             if (window.lastUrlType === 'story') {
                 showStatus('<div class="loading"></div> Downloading story... This may take a moment. Stories may require multiple attempts.', 'loading');
@@ -51,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Check if it's a post URL that might contain multiple items
             if (window.lastUrlType === 'post') {
                 // Show the "Download All" button for potential carousel posts
-                downloadAllContainer.classList.remove('hidden');
+               // downloadAllContainer.classList.remove('hidden');
                 downloadAllBtn.setAttribute('data-url', url);
             } else {
                 downloadAllContainer.classList.add('hidden');
@@ -67,7 +70,9 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             
             const data = await response.json();
-            
+            // Reset the download button
+            downloadBtn.disabled = false;
+            downloadBtn.textContent = 'Download';
             if (data.error === true) {
                 throw new Error(data.message || 'Failed to download the content');
             }
@@ -84,6 +89,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             
         } catch (error) {
+            // Reset the download button state in case of error
+            downloadBtn.disabled = false;
+            downloadBtn.textContent = 'Download';
+        
             showDetailedError(error.message || 'An error occurred while downloading the content');
         }
     });
@@ -190,9 +199,13 @@ document.addEventListener('DOMContentLoaded', () => {
             mediaContainer.appendChild(video);
         } else {
             const img = document.createElement('img');
-            img.src = data.mediaUrl;
+            img.src = `/.netlify/functions/proxy-thumbnail?url=${encodeURIComponent(data.mediaUrl)}`;
             img.className = 'preview-media';
-            mediaContainer.appendChild(img);
+            img.onerror = function() {
+            console.log('Image failed to load');
+            this.src = `https://via.placeholder.com/300x300/0095f6/ffffff?text=IMAGE`;
+        };
+        mediaContainer.appendChild(img);
         }
         
         // Create download buttons container
@@ -246,59 +259,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // Clear download area and make it visible
         downloadArea.innerHTML = '';
         downloadArea.classList.remove('hidden');
-        
-        // Create main item container
-        const mainItemContainer = document.createElement('div');
-        mainItemContainer.className = 'main-item';
-        
-        const mainHeader = document.createElement('h3');
-        mainHeader.textContent = `Downloaded Item 1 of ${data.carouselCount}`;
-        mainItemContainer.appendChild(mainHeader);
-        
-        // Create media container for first item
-        const mediaContainer = document.createElement('div');
-        mediaContainer.className = 'media-container';
-        
-        if (data.mediaType === 'video') {
-            const video = document.createElement('video');
-            video.controls = true;
-            video.src = data.mediaUrl;
-            video.className = 'media-preview';
-            mediaContainer.appendChild(video);
-        } else {
-            const img = document.createElement('img');
-            img.src = data.mediaUrl;
-            img.className = 'media-preview';
-            mediaContainer.appendChild(img);
-        }
-        mainItemContainer.appendChild(mediaContainer);
-        
-        // Create buttons container
-        const buttonsContainer = document.createElement('div');
-        buttonsContainer.className = 'buttons-container';
-        
-        // Create download button for first item
-        const downloadBtn = document.createElement('button');
-        downloadBtn.className = 'download-btn';
-        downloadBtn.textContent = 'Download';
-        downloadBtn.addEventListener('click', () => {
-            handleMediaDownload(data.mediaUrl, data.filename);
-        });
-        buttonsContainer.appendChild(downloadBtn);
-        
-        // Add audio extraction button for videos in the first item
-        if (data.mediaType === 'video') {
-            const extractAudioBtn = document.createElement('button');
-            extractAudioBtn.className = 'extract-audio-btn';
-            extractAudioBtn.textContent = 'Extract Audio';
-            extractAudioBtn.addEventListener('click', () => {
-                extractAudio(data.mediaUrl, `instagram-audio-item1-${Date.now()}.mp3`);
-            });
-            buttonsContainer.appendChild(extractAudioBtn);
-        }
-        
-        mainItemContainer.appendChild(buttonsContainer);
-        downloadArea.appendChild(mainItemContainer);
         
         // Add carousel items section
         const carouselSection = document.createElement('div');
@@ -425,109 +385,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Handle "Download All" button for carousel posts
-    if (downloadAllBtn) {
-        downloadAllBtn.addEventListener('click', async () => {
-            const url = downloadAllBtn.getAttribute('data-url');
-            
-            if (!url) {
-                showStatus('Invalid URL for carousel download', 'error');
-                return;
-            }
-            
-            try {
-                // Show loading status
-                showStatus('<div class="loading"></div> Downloading all content... This may take a moment.', 'loading');
-                
-                // Download all items in the carousel using Netlify function
-                const response = await fetch('/.netlify/functions/download', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({ url: url })
-                });
-                
-                const data = await response.json();
-                
-                if (data.error === true) {
-                    throw new Error(data.message || 'Failed to download carousel content');
-                }
-                
-                const mediaInfo = processAPIResponse(data);
-                
-                if (mediaInfo.isCarousel && mediaInfo.carouselItems && mediaInfo.carouselItems.length > 0) {
-                    // Create a carousel container
-                    const carouselContainer = document.createElement('div');
-                    carouselContainer.className = 'carousel-container';
-                    
-                    // Add each media item to the carousel
-                    mediaInfo.carouselItems.forEach((item, index) => {
-                        const itemContainer = document.createElement('div');
-                        itemContainer.className = 'carousel-item';
-                        
-                        if (item.type === 'video') {
-                            const video = document.createElement('video');
-                            video.className = 'preview-media';
-                            video.controls = true;
-                            video.src = item.downloadUrl;
-                            itemContainer.appendChild(video);
-                        } else {
-                            const img = document.createElement('img');
-                            img.className = 'preview-media';
-                            img.src = item.downloadUrl;
-                            itemContainer.appendChild(img);
-                        }
-                        
-                        // Create buttons container
-                        const buttonsDiv = document.createElement('div');
-                        buttonsDiv.className = 'buttons-container';
-                        
-                        const downloadBtn = document.createElement('button');
-                        downloadBtn.className = 'download-button';
-                        downloadBtn.textContent = `Download ${capitalizeFirstLetter(item.type)} ${index + 1}`;
-                        downloadBtn.addEventListener('click', () => {
-                            const filename = `instagram-content-${Date.now()}-${index + 1}.${item.type === 'video' ? 'mp4' : 'jpg'}`;
-                            handleMediaDownload(item.downloadUrl, filename);
-                        });
-                        buttonsDiv.appendChild(downloadBtn);
-                        
-                        // Add audio extraction button for videos
-                        if (item.type === 'video') {
-                            const audioBtn = document.createElement('button');
-                            audioBtn.className = 'extract-audio-button';
-                            audioBtn.textContent = 'Extract Audio';
-                            audioBtn.addEventListener('click', () => {
-                                extractAudio(item.downloadUrl, `instagram-audio-${Date.now()}-${index + 1}.mp3`);
-                            });
-                            buttonsDiv.appendChild(audioBtn);
-                        }
-                        
-                        itemContainer.appendChild(buttonsDiv);
-                        carouselContainer.appendChild(itemContainer);
-                    });
-                    
-                    // Add the carousel to the download area
-                    downloadArea.innerHTML = '';
-                    downloadArea.appendChild(carouselContainer);
-                    downloadArea.classList.remove('hidden');
-                    
-                    showStatus(`Downloaded ${mediaInfo.carouselItems.length} items successfully!`, 'success');
-                } else {
-                    throw new Error('No carousel items found');
-                }
-                
-            } catch (error) {
-                showDetailedError(error.message || 'An error occurred while downloading carousel content');
-            }
-        });
-    }
 
     // Function to handle media download through Netlify function
     async function handleMediaDownload(url, filename) {
         try {
             console.log(`Downloading: ${filename}`);
-            
+            const downloadBtn = document.querySelector('.download-button, .download-btn');
+            const originalText = downloadBtn ? downloadBtn.textContent : '';
+            if (downloadBtn) {
+                downloadBtn.textContent = 'Downloading...';
+                downloadBtn.disabled = true;
+            }
+            showStatus('<div class="loading"></div> Downloading content... This may take a moment.', 'loading');
+        
             // Call the Netlify function to download the media
             const response = await fetch('/.netlify/functions/download-media', {
                 method: 'POST',
@@ -557,10 +427,28 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 URL.revokeObjectURL(downloadUrl);
             }, 100);
+            // Show success status
+            showStatus('Content downloaded successfully!', 'success');
             
+            // Restore button state
+            if (downloadBtn) {
+                setTimeout(() => {
+                    downloadBtn.textContent = 'Downloaded!';
+                    setTimeout(() => {
+                        downloadBtn.textContent = originalText;
+                        downloadBtn.disabled = false;
+                    }, 2000);
+                }, 500);
+            }
         } catch (error) {
             console.error('Download error:', error);
             showStatus('Failed to download file. Please try again.', 'error');
+            // Restore any disabled button
+            const downloadBtn = document.querySelector('.download-button[disabled], .download-btn[disabled]');
+            if (downloadBtn) {
+                downloadBtn.textContent = 'Try Again';
+                downloadBtn.disabled = false;
+            }
         }
     }
 
@@ -684,6 +572,14 @@ document.addEventListener('DOMContentLoaded', () => {
 // Function to extract audio from video URL using client-side processing
 async function extractAudioClientSide(videoUrl, filename) {
     try {
+        const audioBtn = document.querySelector('.extract-audio-button, .extract-audio-btn, .extract-audio-item-btn');
+        const originalText = audioBtn ? audioBtn.textContent : '';
+
+        // Update button state if found
+        if (audioBtn) {
+            audioBtn.textContent = 'Extracting...';
+            audioBtn.disabled = true;
+        }
       // Show loading status
       showStatus('<div class="loading"></div> Extracting audio... This may take a moment.', 'loading');
       
@@ -738,10 +634,26 @@ async function extractAudioClientSide(videoUrl, filename) {
       
       // Show success status
       showStatus('Audio extracted and downloaded successfully!', 'success');
+      // Restore button state
+        if (audioBtn) {
+            setTimeout(() => {
+                audioBtn.textContent = 'Extracted!';
+                setTimeout(() => {
+                    audioBtn.textContent = originalText;
+                    audioBtn.disabled = false;
+                }, 2000);
+            }, 500);
+        }
       
     } catch (error) {
       console.error('Client-side audio extraction error:', error);
       showStatus('Failed to extract audio. The video format may not be supported by your browser.', 'error');
+      // Restore any disabled button
+      const audioBtn = document.querySelector('.extract-audio-button[disabled], .extract-audio-btn[disabled], .extract-audio-item-btn[disabled]');
+      if (audioBtn) {
+          audioBtn.textContent = 'Try Again';
+          audioBtn.disabled = false;
+      }
     }
   }
   

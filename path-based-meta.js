@@ -241,4 +241,43 @@ document.addEventListener('DOMContentLoaded', function() {
       if (urlInput) urlInput.placeholder = 'Paste Instagram Video URL here...';
       if (downloadBtn) downloadBtn.textContent = 'Download Video';
     }
+    else if (path.includes('/audio-download')) {
+      // Update document title and meta tags
+      document.title = 'Instagram Audio Extractor - Download Audio from Reels & Videos';
+      metaDescription.setAttribute('content', 'Extract and download audio from Instagram reels and videos in MP3 format. Free online Instagram audio extractor with no limits. Works with reels, videos, and stories.');
+      metaKeywords.setAttribute('content', 'instagram audio extractor, download instagram audio, instagram reel audio, extract audio from instagram, instagram music downloader, instagram sound download');
+      canonicalLink.setAttribute('href', 'https://instantmediasave.com/audio-download');
+      
+      // Update Open Graph and Twitter tags
+      if (ogTitle) ogTitle.setAttribute('content', 'Instagram Audio Extractor - Download Audio from Reels & Videos');
+      if (ogDesc) ogDesc.setAttribute('content', 'Extract and download audio from Instagram reels and videos in MP3 format. Free online Instagram audio extractor with no limits.');
+      if (ogUrl) ogUrl.setAttribute('content', 'https://instantmediasave.com/audio-download');
+      if (twitterTitle) twitterTitle.setAttribute('content', 'Instagram Audio Extractor');
+      if (twitterDesc) twitterDesc.setAttribute('content', 'Free tool to extract audio from Instagram reels and videos');
+      
+      // Update schema data
+      if (jsonLdScript) {
+        const schemaData = {
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "InstantMediaSave - Instagram Audio Extractor",
+          "description": "Extract and download audio from Instagram reels and videos",
+          "url": "https://instantmediasave.com/audio-download",
+          "applicationCategory": "MediaApplication",
+          "operatingSystem": "All",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          }
+        };
+        jsonLdScript.textContent = JSON.stringify(schemaData);
+      }
+      
+      // Update page content
+      if (h1) h1.textContent = 'Instagram Audio Extractor';
+      if (subtitle) subtitle.textContent = 'Download audio from Instagram reels, videos, and stories';
+      if (urlInput) urlInput.placeholder = 'Paste Instagram URL to extract audio...';
+      if (downloadBtn) downloadBtn.textContent = 'Extract Audio';
+    }
   });
