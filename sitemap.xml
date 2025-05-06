@@ -2,7 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://instantmediasave.com/</loc>
-    <lastmod>2025-05-05</lastmod>
+    <lastmod>2025-05-06</lastmod>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://instantmediasave.com/reels-download</loc>
+    <lastmod>2025-05-06</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://instantmediasave.com/photos-download</loc>
+    <lastmod>2025-05-06</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://instantmediasave.com/stories-download</loc>
+    <lastmod>2025-05-06</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://instantmediasave.com/igtv-download</loc>
+    <lastmod>2025-05-06</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://instantmediasave.com/carousel-download</loc>
+    <lastmod>2025-05-06</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://instantmediasave.com/videos-download</loc>
+    <lastmod>2025-05-06</lastmod>
+    <priority>0.9</priority>
   </url>
 </urlset>
