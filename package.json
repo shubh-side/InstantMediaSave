@@ -4,21 +4,21 @@
     "description": "A web application to download Instagram content using Netlify functions",
     "main": "index.html",
     "dependencies": {
-      "node-fetch": "^2.6.7"
+        "node-fetch": "^2.6.7"
     },
     "devDependencies": {
-      "netlify-cli": "^17.0.0"
+        "netlify-cli": "^17.0.0"
     },
     "scripts": {
-      "dev": "npx netlify dev",
-      "start": "npx netlify dev",
-      "build": "echo 'No build required'"
+        "dev": "npx netlify dev",
+        "start": "npx netlify dev",
+        "build": "echo 'No build required'"
     },
     "keywords": [
-      "instagram",
-      "downloader",
-      "netlify"
+        "instagram",
+        "downloader",
+        "netlify"
     ],
     "author": "",
     "license": "MIT"
-  }
+}

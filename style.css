@@ -144,17 +144,6 @@ button:hover {
     justify-content: center;
 }
 
-/* Loading animation */
-.loading {
-    width: 22px;
-    height: 22px;
-    border: 3px solid rgba(168, 85, 247, 0.15);
-    border-top-color: var(--primary-color);
-    border-radius: 50%;
-    animation: spin 1s ease-in-out infinite;
-    display: inline-block;
-    margin-right: 12px;
-}
 
 @keyframes spin {
     to { transform: rotate(360deg); }
@@ -573,4 +562,87 @@ button:hover {
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 2;
+}
+
+
+/* Audio extraction buttons styling */
+.download-buttons-container,
+.buttons-container,
+.item-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.extract-audio-button,
+.extract-audio-btn,
+.extract-audio-item-btn {
+    background-color: #8b5cf6;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.extract-audio-button::before,
+.extract-audio-btn::before,
+.extract-audio-item-btn::before {
+    content: '♪';
+    margin-right: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.extract-audio-button:hover,
+.extract-audio-btn:hover,
+.extract-audio-item-btn:hover {
+    background-color: #7c3aed;
+    transform: translateY(-2px);
+}
+
+.extract-audio-item-btn {
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 0;
+    margin-top: 1px;
+}
+
+/* Style for disabled state */
+.extract-audio-button:disabled,
+.extract-audio-btn:disabled,
+.extract-audio-item-btn:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Make carousel item buttons stack nicely */
+.carousel-item .item-buttons {
+    flex-direction: column;
+    gap: 0;
+    margin-top: 0;
+}
+
+@media (max-width: 600px) {
+    .download-buttons-container,
+    .buttons-container {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .extract-audio-button,
+    .extract-audio-btn,
+    .download-button,
+    .download-btn {
+        width: 100%;
+    }
 }
