@@ -14,6 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Store the last URL type to provide better error messages
     window.lastUrlType = null;
+    
+    // Store video URLs for audio extraction
+    window.videoUrls = {};
 
     // Handle Enter key press
     reelUrlInput.addEventListener('keypress', (e) => {
@@ -41,6 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Reset display elements and clear ALL previous content
             resetDisplay();
+            
+            // Reset video URLs for audio extraction
+            window.videoUrls = {};
             
             // Check if it's a post URL that might contain multiple items
             if (window.lastUrlType === 'post') {
@@ -93,6 +99,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 throw new Error('No media URL found');
             }
             
+            // Store video URL for audio extraction if it's a video
+            if (mediaType === 'video') {
+                window.videoUrls['main'] = mediaUrl;
+            }
+            
             return {
                 success: true,
                 mediaUrl: mediaUrl,
@@ -106,6 +117,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const carouselItems = data.medias.map((item, index) => {
                 const mediaType = item.type === 'video' ? 'video' : 'image';
                 let thumbnailUrl;
+                
+                // Store video URL for audio extraction if it's a video
+                if (mediaType === 'video' && item.download_url) {
+                    window.videoUrls[`item-${index + 1}`] = item.download_url;
+                }
                 
                 // Use thumbnail proxy for all external URLs
                 if (item.thumb && item.thumb !== item.download_url) {
@@ -128,6 +144,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     downloadUrl: item.download_url
                 };
             });
+            
+            // Store first video URL as main if it's a video
+            if (data.medias[0].type === 'video') {
+                window.videoUrls['main'] = data.medias[0].download_url;
+            }
             
             return {
                 success: true,
@@ -174,17 +195,33 @@ document.addEventListener('DOMContentLoaded', () => {
             mediaContainer.appendChild(img);
         }
         
-        // Create download button
+        // Create download buttons container
+        const downloadButtonsContainer = document.createElement('div');
+        downloadButtonsContainer.className = 'download-buttons-container';
+        
+        // Create main download button
         const downloadButton = document.createElement('button');
         downloadButton.className = 'download-button';
         downloadButton.textContent = `Download ${capitalizeFirstLetter(contentType)}`;
         downloadButton.addEventListener('click', () => {
             handleMediaDownload(data.mediaUrl, data.filename);
         });
+        downloadButtonsContainer.appendChild(downloadButton);
+        
+        // Add audio extraction button for videos
+        if (data.mediaType === 'video') {
+            const extractAudioButton = document.createElement('button');
+            extractAudioButton.className = 'extract-audio-button';
+            extractAudioButton.textContent = 'Extract Audio';
+            extractAudioButton.addEventListener('click', () => {
+                extractAudio(data.mediaUrl, `instagram-audio-${Date.now()}.mp3`);
+            });
+            downloadButtonsContainer.appendChild(extractAudioButton);
+        }
         
         // Add to download area
         downloadArea.appendChild(mediaContainer);
-        downloadArea.appendChild(downloadButton);
+        downloadArea.appendChild(downloadButtonsContainer);
     }
 
     // Helper function to reset display elements
@@ -236,6 +273,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         mainItemContainer.appendChild(mediaContainer);
         
+        // Create buttons container
+        const buttonsContainer = document.createElement('div');
+        buttonsContainer.className = 'buttons-container';
+        
         // Create download button for first item
         const downloadBtn = document.createElement('button');
         downloadBtn.className = 'download-btn';
@@ -243,8 +284,20 @@ document.addEventListener('DOMContentLoaded', () => {
         downloadBtn.addEventListener('click', () => {
             handleMediaDownload(data.mediaUrl, data.filename);
         });
-        mainItemContainer.appendChild(downloadBtn);
+        buttonsContainer.appendChild(downloadBtn);
         
+        // Add audio extraction button for videos in the first item
+        if (data.mediaType === 'video') {
+            const extractAudioBtn = document.createElement('button');
+            extractAudioBtn.className = 'extract-audio-btn';
+            extractAudioBtn.textContent = 'Extract Audio';
+            extractAudioBtn.addEventListener('click', () => {
+                extractAudio(data.mediaUrl, `instagram-audio-item1-${Date.now()}.mp3`);
+            });
+            buttonsContainer.appendChild(extractAudioBtn);
+        }
+        
+        mainItemContainer.appendChild(buttonsContainer);
         downloadArea.appendChild(mainItemContainer);
         
         // Add carousel items section
@@ -293,6 +346,10 @@ document.addEventListener('DOMContentLoaded', () => {
             
             itemElement.appendChild(thumbnailContainer);
             
+            // Create buttons container
+            const buttonsDiv = document.createElement('div');
+            buttonsDiv.className = 'item-buttons';
+            
             // Add download button
             const downloadBtn = document.createElement('button');
             downloadBtn.className = 'download-item-btn';
@@ -300,8 +357,20 @@ document.addEventListener('DOMContentLoaded', () => {
             downloadBtn.setAttribute('data-id', item.uniqueId);
             downloadBtn.setAttribute('data-url', item.downloadUrl);
             downloadBtn.textContent = `Download Item ${item.index}`;
-            itemElement.appendChild(downloadBtn);
+            buttonsDiv.appendChild(downloadBtn);
             
+            // Add audio extraction button for videos
+            if (item.type === 'video') {
+                const audioBtn = document.createElement('button');
+                audioBtn.className = 'extract-audio-item-btn';
+                audioBtn.setAttribute('data-index', item.index);
+                audioBtn.setAttribute('data-id', item.uniqueId);
+                audioBtn.setAttribute('data-url', item.downloadUrl);
+                audioBtn.textContent = 'Extract Audio';
+                buttonsDiv.appendChild(audioBtn);
+            }
+            
+            itemElement.appendChild(buttonsDiv);
             grid.appendChild(itemElement);
         });
         
@@ -315,6 +384,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 const uniqueId = this.getAttribute('data-id');
                 const downloadUrl = this.getAttribute('data-url');
                 downloadCarouselItem(downloadUrl, index);
+            });
+        });
+        
+        // Add event listeners to audio extraction buttons
+        document.querySelectorAll('.extract-audio-item-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const index = this.getAttribute('data-index');
+                const uniqueId = this.getAttribute('data-id');
+                const downloadUrl = this.getAttribute('data-url');
+                extractAudio(downloadUrl, `instagram-audio-item${index}-${Date.now()}.mp3`);
             });
         });
     }
@@ -400,6 +479,10 @@ document.addEventListener('DOMContentLoaded', () => {
                             itemContainer.appendChild(img);
                         }
                         
+                        // Create buttons container
+                        const buttonsDiv = document.createElement('div');
+                        buttonsDiv.className = 'buttons-container';
+                        
                         const downloadBtn = document.createElement('button');
                         downloadBtn.className = 'download-button';
                         downloadBtn.textContent = `Download ${capitalizeFirstLetter(item.type)} ${index + 1}`;
@@ -407,8 +490,20 @@ document.addEventListener('DOMContentLoaded', () => {
                             const filename = `instagram-content-${Date.now()}-${index + 1}.${item.type === 'video' ? 'mp4' : 'jpg'}`;
                             handleMediaDownload(item.downloadUrl, filename);
                         });
-                        itemContainer.appendChild(downloadBtn);
+                        buttonsDiv.appendChild(downloadBtn);
                         
+                        // Add audio extraction button for videos
+                        if (item.type === 'video') {
+                            const audioBtn = document.createElement('button');
+                            audioBtn.className = 'extract-audio-button';
+                            audioBtn.textContent = 'Extract Audio';
+                            audioBtn.addEventListener('click', () => {
+                                extractAudio(item.downloadUrl, `instagram-audio-${Date.now()}-${index + 1}.mp3`);
+                            });
+                            buttonsDiv.appendChild(audioBtn);
+                        }
+                        
+                        itemContainer.appendChild(buttonsDiv);
                         carouselContainer.appendChild(itemContainer);
                     });
                     
@@ -585,4 +680,135 @@ document.addEventListener('DOMContentLoaded', () => {
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
+
+// Function to extract audio from video URL using client-side processing
+async function extractAudioClientSide(videoUrl, filename) {
+    try {
+      // Show loading status
+      showStatus('<div class="loading"></div> Extracting audio... This may take a moment.', 'loading');
+      
+      // Create an audio context
+      const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+      
+      // Fetch the video file
+      const response = await fetch(videoUrl);
+      if (!response.ok) {
+        throw new Error('Failed to fetch video file');
+      }
+      
+      // Get the video data as an array buffer
+      const videoData = await response.arrayBuffer();
+      
+      // Decode the audio from the video
+      const audioBuffer = await audioContext.decodeAudioData(videoData);
+      
+      // Create an offline audio context for rendering
+      const offlineAudioContext = new OfflineAudioContext(
+        audioBuffer.numberOfChannels,
+        audioBuffer.length,
+        audioBuffer.sampleRate
+      );
+      
+      // Create a buffer source
+      const source = offlineAudioContext.createBufferSource();
+      source.buffer = audioBuffer;
+      source.connect(offlineAudioContext.destination);
+      source.start(0);
+      
+      // Render the audio
+      const renderedBuffer = await offlineAudioContext.startRendering();
+      
+      // Convert the rendered buffer to WAV format
+      const wavBuffer = bufferToWav(renderedBuffer);
+      
+      // Create a blob from the WAV buffer
+      const blob = new Blob([wavBuffer], { type: 'audio/wav' });
+      
+      // Create a download link and trigger download
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = filename || 'audio-extract.wav';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      
+      // Clean up
+      URL.revokeObjectURL(url);
+      
+      // Show success status
+      showStatus('Audio extracted and downloaded successfully!', 'success');
+      
+    } catch (error) {
+      console.error('Client-side audio extraction error:', error);
+      showStatus('Failed to extract audio. The video format may not be supported by your browser.', 'error');
+    }
+  }
+  
+  // Helper function to convert an AudioBuffer to a WAV file
+  function bufferToWav(audioBuffer) {
+    const numberOfChannels = audioBuffer.numberOfChannels;
+    const length = audioBuffer.length * numberOfChannels * 2; // 2 bytes per sample
+    const sampleRate = audioBuffer.sampleRate;
+    
+    // Create the buffer for the WAV file
+    const buffer = new ArrayBuffer(44 + length);
+    const view = new DataView(buffer);
+    
+    // Write the WAV header
+    // "RIFF" chunk descriptor
+    writeString(view, 0, 'RIFF');
+    view.setUint32(4, 36 + length, true);
+    writeString(view, 8, 'WAVE');
+    
+    // "fmt " sub-chunk
+    writeString(view, 12, 'fmt ');
+    view.setUint32(16, 16, true); // fmt chunk size
+    view.setUint16(20, 1, true); // audio format (1 for PCM)
+    view.setUint16(22, numberOfChannels, true);
+    view.setUint32(24, sampleRate, true);
+    view.setUint32(28, sampleRate * numberOfChannels * 2, true); // byte rate
+    view.setUint16(32, numberOfChannels * 2, true); // block align
+    view.setUint16(34, 16, true); // bits per sample
+    
+    // "data" sub-chunk
+    writeString(view, 36, 'data');
+    view.setUint32(40, length, true);
+    
+    // Write the audio data
+    const channelData = [];
+    for (let i = 0; i < numberOfChannels; i++) {
+      channelData.push(audioBuffer.getChannelData(i));
+    }
+    
+    let offset = 44;
+    for (let i = 0; i < audioBuffer.length; i++) {
+      for (let channel = 0; channel < numberOfChannels; channel++) {
+        // Convert float audio data (-1 to 1) to 16-bit PCM
+        const sample = Math.max(-1, Math.min(1, channelData[channel][i]));
+        const value = sample < 0 ? sample * 0x8000 : sample * 0x7FFF;
+        view.setInt16(offset, value, true);
+        offset += 2;
+      }
+    }
+    
+    return buffer;
+  }
+  
+  // Helper function to write a string to a DataView
+  function writeString(view, offset, string) {
+    for (let i = 0; i < string.length; i++) {
+      view.setUint8(offset + i, string.charCodeAt(i));
+    }
+  }
+  
+  // Replace your existing extractAudio function with this one that uses client-side processing
+  function extractAudio(videoUrl, filename) {
+    // Use client-side processing instead of server
+    extractAudioClientSide(videoUrl, filename)
+      .catch(error => {
+        console.error('Audio extraction failed:', error);
+        showStatus('Failed to extract audio. Please try downloading the video instead.', 'error');
+      });
+  }
 });
