@@ -10,13 +10,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
       document.body.className = savedTheme;
-    } else {
-      // Check system preference
-      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-        document.body.className = 'theme-light';
-      } else {
-        document.body.className = 'theme-dark';
-      }
+    } 
+    else {
+      document.body.className = 'theme-dark';
     }
     
     // Toggle theme on button click
