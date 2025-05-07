@@ -1404,13 +1404,13 @@ button:focus:not(:active)::after {
 
 /* Theme toggle switch styles */
 .theme-toggle {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
     display: flex;
     align-items: center;
     gap: 8px;
-    z-index: 10;
+    z-index: 1000;
 }
 
 .theme-label {
