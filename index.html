@@ -48,6 +48,61 @@
 </head>
 <body>
     <div class="container">
+      <!-- Add this header right after the opening <div class="container"> tag -->
+        <!-- Add this header right after the opening <div class="container"> tag -->
+        <header class="site-header">
+          <div class="language-selector">
+            <button id="langButton" class="lang-button" aria-label="Select language">
+              <span class="globe-icon">🌐</span>
+              <span class="current-lang">EN</span>
+            </button>
+            <div id="langDropdown" class="lang-dropdown hidden">
+              <!-- Common Languages -->
+              <div class="lang-group">
+                <div class="lang-option" data-lang="en">English</div>
+                <div class="lang-option" data-lang="es">Español</div>
+                <div class="lang-option" data-lang="fr">Français</div>
+                <div class="lang-option" data-lang="de">Deutsch</div>
+                <div class="lang-option" data-lang="it">Italiano</div>
+                <div class="lang-option" data-lang="pt">Português</div>
+                <div class="lang-option" data-lang="ru">Русский</div>
+                <div class="lang-option" data-lang="ja">日本語</div>
+                <div class="lang-option" data-lang="zh-CN">中文 (简体)</div>
+                <div class="lang-option" data-lang="zh-TW">中文 (繁體)</div>
+              </div>
+              
+              <!-- More Languages (Expanded) -->
+              <div class="lang-divider"></div>
+              <div class="lang-group">
+                <div class="lang-option" data-lang="nl">Nederlands</div>
+                <div class="lang-option" data-lang="ko">한국어</div>
+                <div class="lang-option" data-lang="ar">العربية</div>
+                <div class="lang-option" data-lang="hi">हिन्दी</div>
+                <div class="lang-option" data-lang="bn">বাংলা</div>
+                <div class="lang-option" data-lang="pl">Polski</div>
+                <div class="lang-option" data-lang="tr">Türkçe</div>
+                <div class="lang-option" data-lang="vi">Tiếng Việt</div>
+                <div class="lang-option" data-lang="th">ไทย</div>
+                <div class="lang-option" data-lang="id">Bahasa Indonesia</div>
+              </div>
+              
+              <!-- Even More Languages -->
+              <div class="lang-divider"></div>
+              <div class="lang-group">
+                <div class="lang-option" data-lang="uk">Українська</div>
+                <div class="lang-option" data-lang="sv">Svenska</div>
+                <div class="lang-option" data-lang="no">Norsk</div>
+                <div class="lang-option" data-lang="fi">Suomi</div>
+                <div class="lang-option" data-lang="da">Dansk</div>
+                <div class="lang-option" data-lang="cs">Čeština</div>
+                <div class="lang-option" data-lang="el">Ελληνικά</div>
+                <div class="lang-option" data-lang="hu">Magyar</div>
+                <div class="lang-option" data-lang="ro">Română</div>
+                <div class="lang-option" data-lang="sk">Slovenčina</div>
+              </div>
+            </div>
+          </div>
+        </header>
         <h1>Instagram Content Downloader</h1>
         <p class="subtitle">Download reels, images, and stories from Instagram</p>
         
@@ -125,5 +180,6 @@
     <script src="script.js"></script>
     <script src="path-based-meta.js"></script>
     <script src="theme-toggle.js"></script>
+    <script src="language-selector.js"></script>
 </body>
 </html>

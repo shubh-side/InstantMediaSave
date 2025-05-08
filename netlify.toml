@@ -50,6 +50,134 @@
   from = "/privacy"
   to = "/index.html"
   status = 200
+
+# Language specific redirects - Common languages
+[[redirects]]
+  from = "/en/*"
+  to = "/index.html"
+  status = 200
+[[redirects]]
+  from = "/es/*"
+  to = "/index.html"
+  status = 200
+[[redirects]]
+  from = "/fr/*"
+  to = "/index.html"
+  status = 200
+[[redirects]]
+  from = "/de/*"
+  to = "/index.html"
+  status = 200
+[[redirects]]
+  from = "/it/*"
+  to = "/index.html"
+  status = 200
+[[redirects]]
+  from = "/pt/*"
+  to = "/index.html"
+  status = 200
+[[redirects]]
+  from = "/ru/*"
+  to = "/index.html"
+  status = 200
+[[redirects]]
+  from = "/ja/*"
+  to = "/index.html"
+  status = 200
+[[redirects]]
+  from = "/zh-CN/*"
+  to = "/index.html"
+  status = 200
+[[redirects]]
+  from = "/zh-TW/*"
+  to = "/index.html"
+  status = 200
+
+# Language specific redirects - More languages
+[[redirects]]
+  from = "/nl/*"
+  to = "/index.html"
+  status = 200
+[[redirects]]
+  from = "/ko/*"
+  to = "/index.html"
+  status = 200
+[[redirects]]
+  from = "/ar/*"
+  to = "/index.html"
+  status = 200
+[[redirects]]
+  from = "/hi/*"
+  to = "/index.html"
+  status = 200
+[[redirects]]
+  from = "/bn/*"
+  to = "/index.html"
+  status = 200
+[[redirects]]
+  from = "/pl/*"
+  to = "/index.html"
+  status = 200
+[[redirects]]
+  from = "/tr/*"
+  to = "/index.html"
+  status = 200
+[[redirects]]
+  from = "/vi/*"
+  to = "/index.html"
+  status = 200
+[[redirects]]
+  from = "/th/*"
+  to = "/index.html"
+  status = 200
+[[redirects]]
+  from = "/id/*"
+  to = "/index.html"
+  status = 200
+
+# Language specific redirects - Even more languages
+[[redirects]]
+  from = "/uk/*"
+  to = "/index.html"
+  status = 200
+[[redirects]]
+  from = "/sv/*"
+  to = "/index.html"
+  status = 200
+[[redirects]]
+  from = "/no/*"
+  to = "/index.html"
+  status = 200
+[[redirects]]
+  from = "/fi/*"
+  to = "/index.html"
+  status = 200
+[[redirects]]
+  from = "/da/*"
+  to = "/index.html"
+  status = 200
+[[redirects]]
+  from = "/cs/*"
+  to = "/index.html"
+  status = 200
+[[redirects]]
+  from = "/el/*"
+  to = "/index.html"
+  status = 200
+[[redirects]]
+  from = "/hu/*"
+  to = "/index.html"
+  status = 200
+[[redirects]]
+  from = "/ro/*"
+  to = "/index.html"
+  status = 200
+[[redirects]]
+  from = "/sk/*"
+  to = "/index.html"
+  status = 200
+
+# Fallback redirect
 [[redirects]]
   from = "/*"
   to = "/index.html"
