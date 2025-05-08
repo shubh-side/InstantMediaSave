@@ -1,0 +1,46 @@
+{
+    "header-title": "Trình Tải Xuống Nội Dung Instagram",
+    "header-subtitle": "Tải xuống reels, hình ảnh và stories từ Instagram",
+    "input-placeholder": "Dán URL Instagram (reel, bài đăng hoặc story)...",
+    "download-button": "Tải xuống",
+    "download-all-text": "Đây có thể là bài đăng với nhiều hình ảnh/video.",
+    "download-all-button": "Tải Xuống Tất Cả Nội Dung",
+    "download-link": "Tải Xuống Nội Dung",
+    "info-title": "Cách Tải Xuống Reels, Ảnh và Video Instagram",
+    "info-description": "InstantMediaSave là công cụ trực tuyến miễn phí để tải xuống nội dung Instagram. Chỉ cần dán URL của bất kỳ bài đăng, reel hoặc story Instagram công khai nào để lưu ngay lập tức.",
+    "supported-title": "Các Loại Nội Dung Instagram Được Hỗ Trợ:",
+    "supported-items": [
+      "<strong>Tải Xuống Reels Instagram</strong> - Lưu video dọc ngắn và nội dung thịnh hành",
+      "<strong>Tải Xuống Ảnh Instagram</strong> - Lưu hình ảnh đơn lẻ và bài đăng ảnh",
+      "<strong>Tải Xuống Video Instagram</strong> - Lưu bài đăng video và nội dung",
+      "<strong>Tải Xuống Âm Thanh/Bài Hát Instagram</strong> - Lưu âm thanh từ bài đăng và reels",
+      "<strong>Tải Xuống Bài Đăng Carousel Instagram</strong> - Lưu nhiều hình ảnh/video từ một bài đăng",
+      "<strong>Tải Xuống Stories Instagram</strong> - Lưu nội dung tạm thời (phải là công khai)"
+    ],
+    "faq-title": "Câu Hỏi Thường Gặp",
+    "faq-questions": [
+      "Làm thế nào để tải xuống reels Instagram?",
+      "Làm thế nào để tải xuống ảnh Instagram?",
+      "Tải xuống nội dung Instagram có hợp pháp không?"
+    ],
+    "faq-answers": [
+      "Để tải xuống reels Instagram, chỉ cần sao chép URL của reel từ Instagram, dán vào trình tải xuống của chúng tôi và nhấp vào tải xuống. Bạn có thể lưu reels chất lượng cao trực tiếp vào thiết bị của mình.",
+      "Tải xuống ảnh Instagram rất dễ dàng - sao chép URL bài đăng, dán vào đây và nhấp vào tải xuống. Công cụ của chúng tôi hoạt động với ảnh đơn lẻ và bài đăng carousel có nhiều hình ảnh.",
+      "Tải xuống nội dung Instagram công khai để sử dụng cá nhân thường được chấp nhận. Tuy nhiên, luôn tôn trọng luật bản quyền và điều khoản dịch vụ của Instagram. Công cụ này chỉ dành cho mục đích sử dụng cá nhân."
+    ],
+    "disclaimer": "Lưu ý: Công cụ này chỉ dành cho mục đích sử dụng cá nhân. Vui lòng tôn trọng bản quyền và Điều khoản Dịch vụ của Instagram.",
+    "related-tools-title": "Công Cụ Tải Xuống Instagram Của Chúng Tôi:",
+    "related-tools-links": [
+      "Trình Tải Xuống Reels Instagram",
+      "Trình Tải Xuống Ảnh Instagram",
+      "Trình Tải Xuống Stories Instagram",
+      "Trình Tải Xuống Video IGTV",
+      "Trình Tải Xuống Carousel Instagram",
+      "Trình Tải Xuống Video Instagram",
+      "Trình Trích Xuất Âm Thanh Instagram"
+    ],
+    "footer-about": "Giới Thiệu",
+    "footer-privacy": "Chính Sách Bảo Mật",
+    "footer-copyright": "© 2025 InstantMediaSave. Tất cả các quyền được bảo lưu.",
+    "footer-tagline": "Được tạo với ❤️ bởi InstantMediaSave"
+  }

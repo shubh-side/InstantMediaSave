@@ -1,0 +1,46 @@
+{
+    "header-title": "Instagram Content Downloader",
+    "header-subtitle": "Download reels, afbeeldingen en verhalen van Instagram",
+    "input-placeholder": "Plak Instagram URL (reel, bericht of verhaal)...",
+    "download-button": "Downloaden",
+    "download-all-text": "Dit is mogelijk een bericht met meerdere afbeeldingen/video's.",
+    "download-all-button": "Alle Inhoud Downloaden",
+    "download-link": "Inhoud Downloaden",
+    "info-title": "Hoe Instagram Reels, Foto's en Video's te Downloaden",
+    "info-description": "InstantMediaSave is een gratis online tool om Instagram-inhoud te downloaden. Plak gewoon de URL van een openbaar Instagram-bericht, reel of verhaal om het direct op te slaan.",
+    "supported-title": "Ondersteunde Instagram Inhoudstypen:",
+    "supported-items": [
+      "<strong>Instagram Reels Downloaden</strong> - Sla korte verticale video's en trending content op",
+      "<strong>Instagram Foto's Downloaden</strong> - Sla enkele afbeeldingen en fotoberichten op",
+      "<strong>Instagram Video's Downloaden</strong> - Sla videoberichten en content op",
+      "<strong>Instagram Audio/Liedjes Downloaden</strong> - Sla audio van berichten en reels op",
+      "<strong>Instagram Carrouselberichten Downloaden</strong> - Sla meerdere afbeeldingen/video's van één bericht op",
+      "<strong>Instagram Verhalen Downloaden</strong> - Sla tijdelijke inhoud op (moet openbaar zijn)"
+    ],
+    "faq-title": "Veelgestelde Vragen",
+    "faq-questions": [
+      "Hoe Instagram reels downloaden?",
+      "Hoe Instagram foto's downloaden?",
+      "Is het legaal om Instagram-inhoud te downloaden?"
+    ],
+    "faq-answers": [
+      "Om Instagram reels te downloaden, kopieer je gewoon de URL van de reel van Instagram, plak je deze in onze downloader en klik je op downloaden. Je kunt reels in hoge kwaliteit rechtstreeks op je apparaat opslaan.",
+      "Instagram-foto's downloaden is eenvoudig - kopieer de URL van het bericht, plak het hier en klik op downloaden. Onze tool werkt met enkele foto's en carrouselberichten met meerdere afbeeldingen.",
+      "Het downloaden van openbare Instagram-inhoud voor persoonlijk gebruik is over het algemeen aanvaardbaar. Respecteer echter altijd de auteursrechtwetten en de servicevoorwaarden van Instagram. Deze tool is alleen voor persoonlijk gebruik."
+    ],
+    "disclaimer": "Opmerking: Deze tool is alleen voor persoonlijk gebruik. Respecteer auteursrechten en de Servicevoorwaarden van Instagram.",
+    "related-tools-title": "Onze Instagram Download Tools:",
+    "related-tools-links": [
+      "Instagram Reels Downloader",
+      "Instagram Foto's Downloader",
+      "Instagram Verhalen Downloader",
+      "IGTV Video Downloader",
+      "Instagram Carrousel Downloader",
+      "Instagram Video's Downloader",
+      "Instagram Audio Extractor"
+    ],
+    "footer-about": "Over Ons",
+    "footer-privacy": "Privacybeleid",
+    "footer-copyright": "© 2025 InstantMediaSave. Alle rechten voorbehouden.",
+    "footer-tagline": "Gemaakt met ❤️ door InstantMediaSave"
+  }

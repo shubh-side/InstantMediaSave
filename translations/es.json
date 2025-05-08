@@ -1,0 +1,46 @@
+{
+    "header-title": "Descargador de Contenido de Instagram",
+    "header-subtitle": "Descarga reels, imágenes e historias de Instagram",
+    "input-placeholder": "Pega la URL de Instagram (reel, publicación o historia)...",
+    "download-button": "Descargar",
+    "download-all-text": "Esta podría ser una publicación con múltiples imágenes/videos.",
+    "download-all-button": "Descargar Todo el Contenido",
+    "download-link": "Descargar Contenido",
+    "info-title": "Cómo Descargar Reels, Fotos y Videos de Instagram",
+    "info-description": "InstantMediaSave es una herramienta gratuita para descargar contenido de Instagram. Simplemente pega la URL de cualquier publicación pública de Instagram, reel o historia para guardarla al instante.",
+    "supported-title": "Tipos de Contenido de Instagram Compatibles:",
+    "supported-items": [
+      "<strong>Descargar Reels de Instagram</strong> - Guarda videos verticales cortos y contenido de tendencia",
+      "<strong>Descargar Fotos de Instagram</strong> - Guarda imágenes individuales y publicaciones de fotos",
+      "<strong>Descargar Videos de Instagram</strong> - Guarda publicaciones y contenido de video",
+      "<strong>Descargar Audio/Canciones de Instagram</strong> - Guarda audios de publicaciones y reels",
+      "<strong>Descargar Publicaciones de Carrusel de Instagram</strong> - Guarda múltiples imágenes/videos de una sola publicación",
+      "<strong>Descargar Historias de Instagram</strong> - Guarda contenido temporal (debe ser público)"
+    ],
+    "faq-title": "Preguntas Frecuentes",
+    "faq-questions": [
+      "¿Cómo descargar reels de Instagram?",
+      "¿Cómo descargar fotos de Instagram?",
+      "¿Es legal descargar contenido de Instagram?"
+    ],
+    "faq-answers": [
+      "Para descargar reels de Instagram, simplemente copia la URL del reel de Instagram, pégala en nuestro descargador y haz clic en descargar. Puedes guardar reels en alta calidad directamente en tu dispositivo.",
+      "Descargar fotos de Instagram es fácil - copia la URL de la publicación, pégala aquí y haz clic en descargar. Nuestra herramienta funciona con fotos individuales y publicaciones de carrusel con múltiples imágenes.",
+      "Descargar contenido público de Instagram para uso personal es generalmente aceptable. Sin embargo, siempre respeta las leyes de derechos de autor y los términos de servicio de Instagram. Esta herramienta es solo para uso personal."
+    ],
+    "disclaimer": "Nota: Esta herramienta es solo para uso personal. Por favor, respeta los derechos de autor y los Términos de Servicio de Instagram.",
+    "related-tools-title": "Nuestras Herramientas de Descarga de Instagram:",
+    "related-tools-links": [
+      "Descargador de Reels de Instagram",
+      "Descargador de Fotos de Instagram",
+      "Descargador de Historias de Instagram",
+      "Descargador de Videos IGTV",
+      "Descargador de Carrusel de Instagram",
+      "Descargador de Videos de Instagram",
+      "Extractor de Audio de Instagram"
+    ],
+    "footer-about": "Acerca de",
+    "footer-privacy": "Política de Privacidad",
+    "footer-copyright": "© 2025 InstantMediaSave. Todos los derechos reservados.",
+    "footer-tagline": "Hecho con ❤️ por InstantMediaSave"
+  }

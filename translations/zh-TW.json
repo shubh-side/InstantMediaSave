@@ -1,0 +1,46 @@
+{
+    "header-title": "Instagram內容下載器",
+    "header-subtitle": "從Instagram下載短影片、圖片和故事",
+    "input-placeholder": "貼上Instagram連結（短影片、貼文或故事）...",
+    "download-button": "下載",
+    "download-all-text": "這可能是包含多張圖片/影片的貼文。",
+    "download-all-button": "下載所有內容",
+    "download-link": "下載內容",
+    "info-title": "如何下載Instagram短影片、照片和影片",
+    "info-description": "InstantMediaSave是一款免費的線上工具，用於下載Instagram內容。只需貼上任何公開Instagram貼文、短影片或故事的連結，即可立即儲存。",
+    "supported-title": "支援的Instagram內容類型：",
+    "supported-items": [
+      "<strong>下載Instagram短影片</strong> - 儲存短的垂直影片和熱門內容",
+      "<strong>下載Instagram照片</strong> - 儲存單張圖片和圖片貼文",
+      "<strong>下載Instagram影片</strong> - 儲存影片貼文和內容",
+      "<strong>下載Instagram音訊/歌曲</strong> - 儲存貼文和短影片中的音訊",
+      "<strong>下載Instagram輪播貼文</strong> - 儲存單個貼文中的多張圖片/影片",
+      "<strong>下載Instagram故事</strong> - 儲存臨時內容（必須是公開的）"
+    ],
+    "faq-title": "常見問題",
+    "faq-questions": [
+      "如何下載Instagram短影片？",
+      "如何下載Instagram照片？",
+      "下載Instagram內容合法嗎？"
+    ],
+    "faq-answers": [
+      "要下載Instagram短影片，只需從Instagram複製短影片連結，貼上到我們的下載器中，然後點擊下載。您可以直接將高品質的短影片儲存到您的裝置上。",
+      "下載Instagram照片很簡單 - 複製貼文連結，貼上到這裡，然後點擊下載。我們的工具適用於單張照片和包含多張圖片的輪播貼文。",
+      "為個人使用下載公開的Instagram內容通常是可以接受的。但是，請始終尊重版權法和Instagram的服務條款。此工具僅供個人使用。"
+    ],
+    "disclaimer": "注意：此工具僅供個人使用。請尊重版權和Instagram的服務條款。",
+    "related-tools-title": "我們的Instagram下載工具：",
+    "related-tools-links": [
+      "Instagram短影片下載器",
+      "Instagram照片下載器",
+      "Instagram故事下載器",
+      "IGTV影片下載器",
+      "Instagram輪播下載器",
+      "Instagram影片下載器",
+      "Instagram音訊提取器"
+    ],
+    "footer-about": "關於我們",
+    "footer-privacy": "隱私政策",
+    "footer-copyright": "© 2025 InstantMediaSave. 保留所有權利。",
+    "footer-tagline": "由InstantMediaSave用❤️製作"
+  }

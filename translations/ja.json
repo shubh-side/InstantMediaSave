@@ -1,0 +1,46 @@
+{
+    "header-title": "Instagramコンテンツダウンローダー",
+    "header-subtitle": "Instagramからリールやイメージやストーリーをダウンロードしよう",
+    "input-placeholder": "InstagramのURL（リール、投稿、ストーリー）を貼り付け...",
+    "download-button": "ダウンロード",
+    "download-all-text": "複数の画像/動画を含む投稿かもしれません。",
+    "download-all-button": "すべてのコンテンツをダウンロード",
+    "download-link": "コンテンツをダウンロード",
+    "info-title": "Instagramのリール、写真、動画をダウンロードする方法",
+    "info-description": "InstantMediaSaveは、Instagramコンテンツをダウンロードするための無料オンラインツールです。公開されたInstagramの投稿、リール、ストーリーのURLを貼り付けるだけで、即座に保存できます。",
+    "supported-title": "サポートされているInstagramコンテンツタイプ：",
+    "supported-items": [
+      "<strong>Instagramリールのダウンロード</strong> - 短い縦型動画とトレンドコンテンツを保存",
+      "<strong>Instagram写真のダウンロード</strong> - 単一の画像と写真投稿を保存",
+      "<strong>Instagram動画のダウンロード</strong> - 動画投稿とコンテンツを保存",
+      "<strong>Instagramオーディオ/曲のダウンロード</strong> - 投稿やリールからオーディオを保存",
+      "<strong>Instagramカルーセル投稿のダウンロード</strong> - 1つの投稿から複数の画像/動画を保存",
+      "<strong>Instagramストーリーのダウンロード</strong> - 一時的なコンテンツを保存（公開されている必要があります）"
+    ],
+    "faq-title": "よくある質問",
+    "faq-questions": [
+      "Instagramリールをダウンロードするには？",
+      "Instagram写真をダウンロードするには？",
+      "Instagramコンテンツのダウンロードは合法ですか？"
+    ],
+    "faq-answers": [
+      "Instagramリールをダウンロードするには、InstagramからリールのURLをコピーし、当社のダウンローダーに貼り付けてダウンロードをクリックするだけです。リールを高品質で直接デバイスに保存できます。",
+      "Instagram写真のダウンロードは簡単です - 投稿のURLをコピーし、ここに貼り付けてダウンロードをクリックします。このツールは、単一の写真や複数の画像を含むカルーセル投稿で動作します。",
+      "個人使用のために公開されたInstagramコンテンツをダウンロードすることは一般的に許容されています。ただし、著作権法とInstagramの利用規約を常に尊重してください。このツールは個人使用のみを目的としています。"
+    ],
+    "disclaimer": "注意：このツールは個人使用のみを目的としています。著作権とInstagramの利用規約を尊重してください。",
+    "related-tools-title": "当社のInstagramダウンロードツール：",
+    "related-tools-links": [
+      "Instagramリールダウンローダー",
+      "Instagram写真ダウンローダー",
+      "Instagramストーリーダウンローダー",
+      "IGTV動画ダウンローダー",
+      "Instagramカルーセルダウンローダー",
+      "Instagram動画ダウンローダー",
+      "Instagramオーディオ抽出ツール"
+    ],
+    "footer-about": "私たちについて",
+    "footer-privacy": "プライバシーポリシー",
+    "footer-copyright": "© 2025 InstantMediaSave. All rights reserved.",
+    "footer-tagline": "InstantMediaSaveが❤️を込めて作成"
+  }

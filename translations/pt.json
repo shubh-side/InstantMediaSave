@@ -1,0 +1,46 @@
+{
+    "header-title": "Baixador de Conteúdo do Instagram",
+    "header-subtitle": "Baixe reels, imagens e stories do Instagram",
+    "input-placeholder": "Cole a URL do Instagram (reel, post ou story)...",
+    "download-button": "Baixar",
+    "download-all-text": "Este pode ser um post com várias imagens/vídeos.",
+    "download-all-button": "Baixar Todo o Conteúdo",
+    "download-link": "Baixar Conteúdo",
+    "info-title": "Como Baixar Reels, Fotos e Vídeos do Instagram",
+    "info-description": "InstantMediaSave é uma ferramenta online gratuita para baixar conteúdo do Instagram. Simplesmente cole a URL de qualquer post público do Instagram, reel ou story para salvá-lo instantaneamente.",
+    "supported-title": "Tipos de Conteúdo do Instagram Suportados:",
+    "supported-items": [
+      "<strong>Baixar Reels do Instagram</strong> - Salve vídeos verticais curtos e conteúdo em tendência",
+      "<strong>Baixar Fotos do Instagram</strong> - Salve imagens únicas e posts de fotos",
+      "<strong>Baixar Vídeos do Instagram</strong> - Salve posts de vídeo e conteúdo",
+      "<strong>Baixar Áudio/Músicas do Instagram</strong> - Salve áudios de posts e reels",
+      "<strong>Baixar Posts de Carrossel do Instagram</strong> - Salve várias imagens/vídeos de um único post",
+      "<strong>Baixar Stories do Instagram</strong> - Salve conteúdo temporário (deve ser público)"
+    ],
+    "faq-title": "Perguntas Frequentes",
+    "faq-questions": [
+      "Como baixar reels do Instagram?",
+      "Como baixar fotos do Instagram?",
+      "É legal baixar conteúdo do Instagram?"
+    ],
+    "faq-answers": [
+      "Para baixar reels do Instagram, simplesmente copie a URL do reel do Instagram, cole em nosso baixador e clique em baixar. Você pode salvar reels em alta qualidade diretamente no seu dispositivo.",
+      "Baixar fotos do Instagram é fácil - copie a URL do post, cole aqui e clique em baixar. Nossa ferramenta funciona com fotos únicas e posts de carrossel com várias imagens.",
+      "Baixar conteúdo público do Instagram para uso pessoal é geralmente aceitável. No entanto, sempre respeite as leis de direitos autorais e os termos de serviço do Instagram. Esta ferramenta é apenas para uso pessoal."
+    ],
+    "disclaimer": "Nota: Esta ferramenta é apenas para uso pessoal. Por favor, respeite os direitos autorais e os Termos de Serviço do Instagram.",
+    "related-tools-title": "Nossas Ferramentas de Download do Instagram:",
+    "related-tools-links": [
+      "Baixador de Reels do Instagram",
+      "Baixador de Fotos do Instagram",
+      "Baixador de Stories do Instagram",
+      "Baixador de Vídeos IGTV",
+      "Baixador de Carrossel do Instagram",
+      "Baixador de Vídeos do Instagram",
+      "Extrator de Áudio do Instagram"
+    ],
+    "footer-about": "Sobre",
+    "footer-privacy": "Política de Privacidade",
+    "footer-copyright": "© 2025 InstantMediaSave. Todos os direitos reservados.",
+    "footer-tagline": "Feito com ❤️ por InstantMediaSave"
+  }

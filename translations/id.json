@@ -1,0 +1,46 @@
+{
+    "header-title": "Pengunduh Konten Instagram",
+    "header-subtitle": "Unduh reels, gambar, dan cerita dari Instagram",
+    "input-placeholder": "Tempel URL Instagram (reel, postingan, atau cerita)...",
+    "download-button": "Unduh",
+    "download-all-text": "Ini mungkin postingan dengan beberapa gambar/video.",
+    "download-all-button": "Unduh Semua Konten",
+    "download-link": "Unduh Konten",
+    "info-title": "Cara Mengunduh Reels, Foto, dan Video Instagram",
+    "info-description": "InstantMediaSave adalah alat online gratis untuk mengunduh konten Instagram. Cukup tempel URL dari postingan, reel, atau cerita Instagram publik untuk menyimpannya secara instan.",
+    "supported-title": "Jenis Konten Instagram yang Didukung:",
+    "supported-items": [
+      "<strong>Unduh Reels Instagram</strong> - Simpan video vertikal pendek dan konten yang sedang tren",
+      "<strong>Unduh Foto Instagram</strong> - Simpan gambar tunggal dan postingan gambar",
+      "<strong>Unduh Video Instagram</strong> - Simpan postingan video dan konten",
+      "<strong>Unduh Audio/Lagu Instagram</strong> - Simpan audio dari postingan dan reels",
+      "<strong>Unduh Postingan Carousel Instagram</strong> - Simpan beberapa gambar/video dari satu postingan",
+      "<strong>Unduh Cerita Instagram</strong> - Simpan konten sementara (harus publik)"
+    ],
+    "faq-title": "Pertanyaan yang Sering Diajukan",
+    "faq-questions": [
+      "Bagaimana cara mengunduh reels Instagram?",
+      "Bagaimana cara mengunduh foto Instagram?",
+      "Apakah mengunduh konten Instagram legal?"
+    ],
+    "faq-answers": [
+      "Untuk mengunduh reels Instagram, cukup salin URL reel dari Instagram, tempel ke pengunduh kami, dan klik unduh. Anda dapat menyimpan reels dalam kualitas tinggi langsung ke perangkat Anda.",
+      "Mengunduh foto Instagram sangat mudah - salin URL postingan, tempel di sini, dan klik unduh. Alat kami bekerja dengan foto tunggal dan postingan carousel dengan beberapa gambar.",
+      "Mengunduh konten Instagram publik untuk penggunaan pribadi umumnya dapat diterima. Namun, selalu hormati hukum hak cipta dan ketentuan layanan Instagram. Alat ini hanya untuk penggunaan pribadi."
+    ],
+    "disclaimer": "Catatan: Alat ini hanya untuk penggunaan pribadi. Harap hormati hak cipta dan Ketentuan Layanan Instagram.",
+    "related-tools-title": "Alat Pengunduhan Instagram Kami:",
+    "related-tools-links": [
+      "Pengunduh Reels Instagram",
+      "Pengunduh Foto Instagram",
+      "Pengunduh Cerita Instagram",
+      "Pengunduh Video IGTV",
+      "Pengunduh Carousel Instagram",
+      "Pengunduh Video Instagram",
+      "Pengekstrak Audio Instagram"
+    ],
+    "footer-about": "Tentang Kami",
+    "footer-privacy": "Kebijakan Privasi",
+    "footer-copyright": "© 2025 InstantMediaSave. Semua hak dilindungi.",
+    "footer-tagline": "Dibuat dengan ❤️ oleh InstantMediaSave"
+  }

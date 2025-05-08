@@ -1,0 +1,46 @@
+{
+    "header-title": "Instagram İçerik İndirici",
+    "header-subtitle": "Instagram'dan reels, fotoğraf ve hikayeler indirin",
+    "input-placeholder": "Instagram URL'sini yapıştırın (reels, gönderi veya hikaye)...",
+    "download-button": "İndir",
+    "download-all-text": "Bu, birden fazla resim/video içeren bir gönderi olabilir.",
+    "download-all-button": "Tüm İçeriği İndir",
+    "download-link": "İçeriği İndir",
+    "info-title": "Instagram Reels, Fotoğraf ve Videoları Nasıl İndirilir",
+    "info-description": "InstantMediaSave, Instagram içeriklerini indirmek için ücretsiz bir çevrimiçi araçtır. Herhangi bir açık Instagram gönderisinin, reels'in veya hikayenin URL'sini yapıştırarak anında kaydedin.",
+    "supported-title": "Desteklenen Instagram İçerik Türleri:",
+    "supported-items": [
+      "<strong>Instagram Reels İndirme</strong> - Kısa dikey videolar ve trend içerikleri kaydedin",
+      "<strong>Instagram Fotoğrafları İndirme</strong> - Tek resimler ve fotoğraf gönderileri kaydedin",
+      "<strong>Instagram Videolarını İndirme</strong> - Video gönderileri ve içerikleri kaydedin",
+      "<strong>Instagram Ses/Şarkıları İndirme</strong> - Gönderilerden ve reels'lerden ses kaydedin",
+      "<strong>Instagram Carousel Gönderilerini İndirme</strong> - Tek bir gönderiden birden fazla resim/video kaydedin",
+      "<strong>Instagram Hikayeleri İndirme</strong> - Geçici içerikleri kaydedin (açık olmalıdır)"
+    ],
+    "faq-title": "Sıkça Sorulan Sorular",
+    "faq-questions": [
+      "Instagram reels nasıl indirilir?",
+      "Instagram fotoğrafları nasıl indirilir?",
+      "Instagram içeriği indirmek yasal mı?"
+    ],
+    "faq-answers": [
+      "Instagram reels indirmek için, Instagram'dan reels URL'sini kopyalayın, indirme aracımıza yapıştırın ve indir'e tıklayın. Reels'leri yüksek kalitede doğrudan cihazınıza kaydedebilirsiniz.",
+      "Instagram fotoğraflarını indirmek kolaydır - gönderi URL'sini kopyalayın, buraya yapıştırın ve indir'e tıklayın. Aracımız tek fotoğraflar ve birden fazla resim içeren carousel gönderileri ile çalışır.",
+      "Kişisel kullanım için açık Instagram içeriği indirmek genellikle kabul edilebilir. Ancak, telif hakkı yasalarına ve Instagram'ın hizmet şartlarına her zaman saygı gösterin. Bu araç yalnızca kişisel kullanım içindir."
+    ],
+    "disclaimer": "Not: Bu araç yalnızca kişisel kullanım içindir. Lütfen telif haklarına ve Instagram'ın Hizmet Şartları'na saygı gösterin.",
+    "related-tools-title": "Instagram İndirme Araçlarımız:",
+    "related-tools-links": [
+      "Instagram Reels İndirici",
+      "Instagram Fotoğraf İndirici",
+      "Instagram Hikaye İndirici",
+      "IGTV Video İndirici",
+      "Instagram Carousel İndirici",
+      "Instagram Video İndirici",
+      "Instagram Ses Ayıklayıcı"
+    ],
+    "footer-about": "Hakkımızda",
+    "footer-privacy": "Gizlilik Politikası",
+    "footer-copyright": "© 2025 InstantMediaSave. Tüm hakları saklıdır.",
+    "footer-tagline": "InstantMediaSave tarafından ❤️ ile yapılmıştır"
+  }

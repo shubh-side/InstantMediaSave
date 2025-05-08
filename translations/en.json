@@ -1,0 +1,46 @@
+{
+    "header-title": "Instagram Content Downloader",
+    "header-subtitle": "Download reels, images, and stories from Instagram",
+    "input-placeholder": "Paste Instagram URL (reel, post, or story)...",
+    "download-button": "Download",
+    "download-all-text": "This might be a post with multiple images/videos.",
+    "download-all-button": "Download All Content",
+    "download-link": "Download Content",
+    "info-title": "How to Download Instagram Reels, Photos, and Videos",
+    "info-description": "InstantMediaSave is a free online tool to download Instagram content. Simply paste the URL of any public Instagram post, reel, or story to save it instantly.",
+    "supported-title": "Supported Instagram Content Types:",
+    "supported-items": [
+      "<strong>Download Instagram Reels</strong> - Save short vertical videos and trending content",
+      "<strong>Download Instagram Photos</strong> - Save single images and picture posts",
+      "<strong>Download Instagram Videos</strong> - Save video posts and content",
+      "<strong>Download Instagram Audio/Songs</strong> - Save audios from posts and reels",
+      "<strong>Download Instagram Carousel Posts</strong> - Save multiple images/videos from a single post",
+      "<strong>Download Instagram Stories</strong> - Save temporary content (must be public)"
+    ],
+    "faq-title": "Frequently Asked Questions",
+    "faq-questions": [
+      "How to download Instagram reels?",
+      "How to download Instagram photos?",
+      "Is it legal to download Instagram content?"
+    ],
+    "faq-answers": [
+      "To download Instagram reels, simply copy the reel's URL from Instagram, paste it into our downloader, and click download. You can save reels in high quality directly to your device.",
+      "Downloading Instagram photos is easy - copy the post URL, paste it here, and click download. Our tool works with single photos and carousel posts with multiple images.",
+      "Downloading public Instagram content for personal use is generally acceptable. However, always respect copyright laws and Instagram's terms of service. This tool is for personal use only."
+    ],
+    "disclaimer": "Note: This tool is for personal use only. Please respect copyright and Instagram's Terms of Service.",
+    "related-tools-title": "Our Instagram Downloading Tools:",
+    "related-tools-links": [
+      "Instagram Reels Downloader",
+      "Instagram Photos Downloader",
+      "Instagram Stories Downloader",
+      "IGTV Video Downloader",
+      "Instagram Carousel Downloader",
+      "Instagram Videos Downloader",
+      "Instagram Audio Extractor"
+    ],
+    "footer-about": "About",
+    "footer-privacy": "Privacy Policy",
+    "footer-copyright": "© 2025 InstantMediaSave. All rights reserved.",
+    "footer-tagline": "Made with ❤️ by InstantMediaSave"
+  }

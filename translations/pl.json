@@ -1,0 +1,46 @@
+{
+    "header-title": "Pobieranie treści z Instagrama",
+    "header-subtitle": "Pobieraj rolki, zdjęcia i relacje z Instagrama",
+    "input-placeholder": "Wklej adres URL z Instagrama (rolka, post lub relacja)...",
+    "download-button": "Pobierz",
+    "download-all-text": "To może być post z wieloma zdjęciami/filmami.",
+    "download-all-button": "Pobierz całą zawartość",
+    "download-link": "Pobierz treść",
+    "info-title": "Jak pobierać rolki, zdjęcia i filmy z Instagrama",
+    "info-description": "InstantMediaSave to darmowe narzędzie online do pobierania treści z Instagrama. Wystarczy wkleić adres URL dowolnego publicznego posta, rolki lub relacji z Instagrama, aby natychmiast go zapisać.",
+    "supported-title": "Obsługiwane typy treści z Instagrama:",
+    "supported-items": [
+      "<strong>Pobieranie rolek z Instagrama</strong> - Zapisuj krótkie pionowe filmy i trendy treści",
+      "<strong>Pobieranie zdjęć z Instagrama</strong> - Zapisuj pojedyncze obrazy i posty ze zdjęciami",
+      "<strong>Pobieranie filmów z Instagrama</strong> - Zapisuj posty wideo i treści",
+      "<strong>Pobieranie dźwięku/piosenek z Instagrama</strong> - Zapisuj dźwięki z postów i rolek",
+      "<strong>Pobieranie postów karuzeli z Instagrama</strong> - Zapisuj wiele zdjęć/filmów z jednego posta",
+      "<strong>Pobieranie relacji z Instagrama</strong> - Zapisuj tymczasowe treści (muszą być publiczne)"
+    ],
+    "faq-title": "Często zadawane pytania",
+    "faq-questions": [
+      "Jak pobierać rolki z Instagrama?",
+      "Jak pobierać zdjęcia z Instagrama?",
+      "Czy pobieranie treści z Instagrama jest legalne?"
+    ],
+    "faq-answers": [
+      "Aby pobrać rolki z Instagrama, wystarczy skopiować adres URL rolki z Instagrama, wkleić go do naszego narzędzia i kliknąć pobierz. Możesz zapisać rolki w wysokiej jakości bezpośrednio na swoim urządzeniu.",
+      "Pobieranie zdjęć z Instagrama jest łatwe - skopiuj adres URL posta, wklej go tutaj i kliknij pobierz. Nasze narzędzie działa z pojedynczymi zdjęciami i postami karuzeli z wieloma obrazami.",
+      "Pobieranie publicznych treści z Instagrama do użytku osobistego jest ogólnie akceptowalne. Jednak zawsze szanuj prawa autorskie i warunki korzystania z usług Instagrama. To narzędzie jest przeznaczone wyłącznie do użytku osobistego."
+    ],
+    "disclaimer": "Uwaga: To narzędzie jest przeznaczone wyłącznie do użytku osobistego. Prosimy o poszanowanie praw autorskich i Warunków korzystania z usług Instagrama.",
+    "related-tools-title": "Nasze narzędzia do pobierania z Instagrama:",
+    "related-tools-links": [
+      "Pobieranie rolek z Instagrama",
+      "Pobieranie zdjęć z Instagrama",
+      "Pobieranie relacji z Instagrama",
+      "Pobieranie filmów IGTV",
+      "Pobieranie karuzeli z Instagrama",
+      "Pobieranie filmów z Instagrama",
+      "Ekstraktor dźwięku z Instagrama"
+    ],
+    "footer-about": "O nas",
+    "footer-privacy": "Polityka prywatności",
+    "footer-copyright": "© 2025 InstantMediaSave. Wszelkie prawa zastrzeżone.",
+    "footer-tagline": "Stworzone z ❤️ przez InstantMediaSave"
+  }

@@ -1,0 +1,46 @@
+{
+    "header-title": "Téléchargeur de Contenu Instagram",
+    "header-subtitle": "Téléchargez des reels, des images et des stories depuis Instagram",
+    "input-placeholder": "Collez l'URL Instagram (reel, publication ou story)...",
+    "download-button": "Télécharger",
+    "download-all-text": "Il pourrait s'agir d'une publication avec plusieurs images/vidéos.",
+    "download-all-button": "Télécharger Tout le Contenu",
+    "download-link": "Télécharger le Contenu",
+    "info-title": "Comment Télécharger des Reels, Photos et Vidéos Instagram",
+    "info-description": "InstantMediaSave est un outil gratuit en ligne pour télécharger du contenu Instagram. Collez simplement l'URL de n'importe quelle publication, reel ou story Instagram publique pour l'enregistrer instantanément.",
+    "supported-title": "Types de Contenu Instagram Pris en Charge :",
+    "supported-items": [
+      "<strong>Télécharger des Reels Instagram</strong> - Enregistrez des vidéos verticales courtes et du contenu tendance",
+      "<strong>Télécharger des Photos Instagram</strong> - Enregistrez des images uniques et des publications d'images",
+      "<strong>Télécharger des Vidéos Instagram</strong> - Enregistrez des publications vidéo et du contenu",
+      "<strong>Télécharger des Audios/Chansons Instagram</strong> - Enregistrez des audios de publications et de reels",
+      "<strong>Télécharger des Publications Carrousel Instagram</strong> - Enregistrez plusieurs images/vidéos d'une seule publication",
+      "<strong>Télécharger des Stories Instagram</strong> - Enregistrez du contenu temporaire (doit être public)"
+    ],
+    "faq-title": "Questions Fréquemment Posées",
+    "faq-questions": [
+      "Comment télécharger des reels Instagram ?",
+      "Comment télécharger des photos Instagram ?",
+      "Est-il légal de télécharger du contenu Instagram ?"
+    ],
+    "faq-answers": [
+      "Pour télécharger des reels Instagram, copiez simplement l'URL du reel depuis Instagram, collez-la dans notre téléchargeur et cliquez sur télécharger. Vous pouvez enregistrer des reels en haute qualité directement sur votre appareil.",
+      "Télécharger des photos Instagram est facile - copiez l'URL de la publication, collez-la ici et cliquez sur télécharger. Notre outil fonctionne avec des photos uniques et des publications carrousel avec plusieurs images.",
+      "Télécharger du contenu Instagram public pour un usage personnel est généralement acceptable. Cependant, respectez toujours les lois sur le droit d'auteur et les conditions d'utilisation d'Instagram. Cet outil est uniquement destiné à un usage personnel."
+    ],
+    "disclaimer": "Remarque : Cet outil est destiné à un usage personnel uniquement. Veuillez respecter les droits d'auteur et les Conditions d'Utilisation d'Instagram.",
+    "related-tools-title": "Nos Outils de Téléchargement Instagram :",
+    "related-tools-links": [
+      "Téléchargeur de Reels Instagram",
+      "Téléchargeur de Photos Instagram",
+      "Téléchargeur de Stories Instagram",
+      "Téléchargeur de Vidéos IGTV",
+      "Téléchargeur de Carrousel Instagram",
+      "Téléchargeur de Vidéos Instagram",
+      "Extracteur Audio Instagram"
+    ],
+    "footer-about": "À Propos",
+    "footer-privacy": "Politique de Confidentialité",
+    "footer-copyright": "© 2025 InstantMediaSave. Tous droits réservés.",
+    "footer-tagline": "Fait avec ❤️ par InstantMediaSave"
+  }

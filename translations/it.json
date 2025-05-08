@@ -1,0 +1,46 @@
+{
+    "header-title": "Scaricatore di Contenuti Instagram",
+    "header-subtitle": "Scarica reel, immagini e storie da Instagram",
+    "input-placeholder": "Incolla l'URL di Instagram (reel, post o storia)...",
+    "download-button": "Scarica",
+    "download-all-text": "Questo potrebbe essere un post con più immagini/video.",
+    "download-all-button": "Scarica Tutti i Contenuti",
+    "download-link": "Scarica Contenuto",
+    "info-title": "Come Scaricare Reel, Foto e Video di Instagram",
+    "info-description": "InstantMediaSave è uno strumento gratuito online per scaricare contenuti da Instagram. Basta incollare l'URL di qualsiasi post pubblico di Instagram, reel o storia per salvarlo istantaneamente.",
+    "supported-title": "Tipi di Contenuto Instagram Supportati:",
+    "supported-items": [
+      "<strong>Scarica Reel di Instagram</strong> - Salva video verticali brevi e contenuti di tendenza",
+      "<strong>Scarica Foto di Instagram</strong> - Salva immagini singole e post di immagini",
+      "<strong>Scarica Video di Instagram</strong> - Salva post e contenuti video",
+      "<strong>Scarica Audio/Canzoni di Instagram</strong> - Salva audio da post e reel",
+      "<strong>Scarica Post Carosello di Instagram</strong> - Salva più immagini/video da un singolo post",
+      "<strong>Scarica Storie di Instagram</strong> - Salva contenuti temporanei (devono essere pubblici)"
+    ],
+    "faq-title": "Domande Frequenti",
+    "faq-questions": [
+      "Come scaricare i reel di Instagram?",
+      "Come scaricare le foto di Instagram?",
+      "È legale scaricare contenuti da Instagram?"
+    ],
+    "faq-answers": [
+      "Per scaricare i reel di Instagram, basta copiare l'URL del reel da Instagram, incollarlo nel nostro scaricatore e cliccare su scarica. Puoi salvare i reel in alta qualità direttamente sul tuo dispositivo.",
+      "Scaricare foto di Instagram è facile - copia l'URL del post, incollalo qui e clicca su scarica. Il nostro strumento funziona con foto singole e post carosello con più immagini.",
+      "Scaricare contenuti pubblici di Instagram per uso personale è generalmente accettabile. Tuttavia, rispetta sempre le leggi sul copyright e i termini di servizio di Instagram. Questo strumento è solo per uso personale."
+    ],
+    "disclaimer": "Nota: Questo strumento è solo per uso personale. Si prega di rispettare il copyright e i Termini di Servizio di Instagram.",
+    "related-tools-title": "I Nostri Strumenti di Scaricamento Instagram:",
+    "related-tools-links": [
+      "Scaricatore di Reel Instagram",
+      "Scaricatore di Foto Instagram",
+      "Scaricatore di Storie Instagram",
+      "Scaricatore di Video IGTV",
+      "Scaricatore di Caroselli Instagram",
+      "Scaricatore di Video Instagram",
+      "Estrattore Audio di Instagram"
+    ],
+    "footer-about": "Chi Siamo",
+    "footer-privacy": "Informativa sulla Privacy",
+    "footer-copyright": "© 2025 InstantMediaSave. Tutti i diritti riservati.",
+    "footer-tagline": "Realizzato con ❤️ da InstantMediaSave"
+  }

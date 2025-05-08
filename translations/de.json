@@ -1,0 +1,46 @@
+{
+    "header-title": "Instagram-Inhaltsdownloader",
+    "header-subtitle": "Lade Reels, Bilder und Stories von Instagram herunter",
+    "input-placeholder": "Füge Instagram-URL ein (Reel, Beitrag oder Story)...",
+    "download-button": "Herunterladen",
+    "download-all-text": "Dies könnte ein Beitrag mit mehreren Bildern/Videos sein.",
+    "download-all-button": "Alle Inhalte herunterladen",
+    "download-link": "Inhalt herunterladen",
+    "info-title": "Wie man Instagram Reels, Fotos und Videos herunterlädt",
+    "info-description": "InstantMediaSave ist ein kostenloses Online-Tool zum Herunterladen von Instagram-Inhalten. Füge einfach die URL eines öffentlichen Instagram-Beitrags, Reels oder einer Story ein, um ihn sofort zu speichern.",
+    "supported-title": "Unterstützte Instagram-Inhaltstypen:",
+    "supported-items": [
+      "<strong>Instagram Reels herunterladen</strong> - Speichere kurze vertikale Videos und trendige Inhalte",
+      "<strong>Instagram Fotos herunterladen</strong> - Speichere einzelne Bilder und Bilderbeiträge",
+      "<strong>Instagram Videos herunterladen</strong> - Speichere Videobeiträge und Inhalte",
+      "<strong>Instagram Audio/Lieder herunterladen</strong> - Speichere Audios von Beiträgen und Reels",
+      "<strong>Instagram Karussell-Beiträge herunterladen</strong> - Speichere mehrere Bilder/Videos aus einem einzigen Beitrag",
+      "<strong>Instagram Stories herunterladen</strong> - Speichere temporäre Inhalte (müssen öffentlich sein)"
+    ],
+    "faq-title": "Häufig gestellte Fragen",
+    "faq-questions": [
+      "Wie lädt man Instagram Reels herunter?",
+      "Wie lädt man Instagram Fotos herunter?",
+      "Ist es legal, Instagram-Inhalte herunterzuladen?"
+    ],
+    "faq-answers": [
+      "Um Instagram Reels herunterzuladen, kopiere einfach die URL des Reels von Instagram, füge sie in unseren Downloader ein und klicke auf Herunterladen. Du kannst Reels in hoher Qualität direkt auf dein Gerät speichern.",
+      "Das Herunterladen von Instagram-Fotos ist einfach - kopiere die Beitrags-URL, füge sie hier ein und klicke auf Herunterladen. Unser Tool funktioniert mit einzelnen Fotos und Karussell-Beiträgen mit mehreren Bildern.",
+      "Das Herunterladen öffentlicher Instagram-Inhalte für den persönlichen Gebrauch ist im Allgemeinen akzeptabel. Beachte jedoch immer die Urheberrechtsgesetze und die Nutzungsbedingungen von Instagram. Dieses Tool ist nur für den persönlichen Gebrauch bestimmt."
+    ],
+    "disclaimer": "Hinweis: Dieses Tool ist nur für den persönlichen Gebrauch bestimmt. Bitte respektiere das Urheberrecht und die Nutzungsbedingungen von Instagram.",
+    "related-tools-title": "Unsere Instagram-Download-Tools:",
+    "related-tools-links": [
+      "Instagram Reels Downloader",
+      "Instagram Fotos Downloader",
+      "Instagram Stories Downloader",
+      "IGTV Video Downloader",
+      "Instagram Karussell Downloader",
+      "Instagram Videos Downloader",
+      "Instagram Audio Extraktor"
+    ],
+    "footer-about": "Über uns",
+    "footer-privacy": "Datenschutzrichtlinie",
+    "footer-copyright": "© 2025 InstantMediaSave. Alle Rechte vorbehalten.",
+    "footer-tagline": "Mit ❤️ erstellt von InstantMediaSave"
+  }
