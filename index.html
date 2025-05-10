@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="translate-styles.css">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="icon" href="/favicon.ico">
@@ -48,44 +49,16 @@
 </head>
 <body>
     <div class="container">
-      <!-- 
-        <header class="site-header">
+    
+    <header class="site-header">
           <div class="language-selector">
             <button id="langButton" class="lang-button" aria-label="Select language">
               <span class="globe-icon">🌐</span>
               <span class="current-lang">EN</span>
             </button>
-            <div id="langDropdown" class="lang-dropdown hidden">
-              <div class="lang-group">
-                <div class="lang-option" data-lang="en">English</div>
-                <div class="lang-option" data-lang="es">Español</div>
-                <div class="lang-option" data-lang="fr">Français</div>
-                <div class="lang-option" data-lang="de">Deutsch</div>
-                <div class="lang-option" data-lang="it">Italiano</div>
-                <div class="lang-option" data-lang="pt">Português</div>
-                <div class="lang-option" data-lang="ru">Русский</div>
-                <div class="lang-option" data-lang="ja">日本語</div>
-                <div class="lang-option" data-lang="zh-CN">中文 (简体)</div>
-                <div class="lang-option" data-lang="zh-TW">中文 (繁體)</div>
-              </div>
-              
-              <div class="lang-divider"></div>
-              <div class="lang-group">
-                <div class="lang-option" data-lang="nl">Nederlands</div>
-                <div class="lang-option" data-lang="ko">한국어</div>
-                <div class="lang-option" data-lang="ar">العربية</div>
-                <div class="lang-option" data-lang="hi">हिन्दी</div>
-                <div class="lang-option" data-lang="bn">বাংলা</div>
-                <div class="lang-option" data-lang="pl">Polski</div>
-                <div class="lang-option" data-lang="tr">Türkçe</div>
-                <div class="lang-option" data-lang="vi">Tiếng Việt</div>
-                <div class="lang-option" data-lang="th">ไทย</div>
-                <div class="lang-option" data-lang="id">Bahasa Indonesia</div>
-              </div>
-              
-            </div>
+            <div id="langDropdown" class="lang-dropdown hidden"></div>
           </div>
-        </header>-->
+        </header>
         <h1>Instagram Content Downloader</h1>
         <p class="subtitle">Download reels, images, and stories from Instagram</p>
         
@@ -141,28 +114,27 @@
         <div class="related-tools">
             <h3>Our Instagram Downloading Tools:</h3>
             <ul>
-              <li><a href="/reels-download">Instagram Reels Downloader</a></li>
-              <li><a href="/photos-download">Instagram Photos Downloader</a></li>
-              <li><a href="/stories-download">Instagram Stories Downloader</a></li>
-              <li><a href="/igtv-download">IGTV Video Downloader</a></li>
-              <li><a href="/carousel-download">Instagram Carousel Downloader</a></li>
-              <li><a href="/videos-download">Instagram Videos Downloader</a></li>
-              <li><a href="/audio-download">Instagram Audio Extractor</a></li>
+                <li data-no-translate><a href="/reels-download">Instagram Reels Downloader</a></li>
+                <li data-no-translate><a href="/photos-download">Instagram Photos Downloader</a></li>
+                <li data-no-translate><a href="/stories-download">Instagram Stories Downloader</a></li>
+                <li data-no-translate><a href="/igtv-download">IGTV Video Downloader</a></li>
+                <li data-no-translate><a href="/carousel-download">Instagram Carousel Downloader</a></li>
+                <li data-no-translate><a href="/videos-download">Instagram Videos Downloader</a></li>
+                <li data-no-translate><a href="/audio-download">Instagram Audio Extractor</a></li>
             </ul>
-          </div>
-          <footer class="site-footer">
-            <div class="footer-links">
-              <a href="/about">About</a>
-              <a href="/privacy">Privacy Policy</a>
-              <!-- You can add more links here if needed -->
-            </div>
-            <p class="copyright">© 2025 InstantMediaSave. All rights reserved.</p>
-            <p class="made-with-love">Made with <span class="heart">❤️</span> by InstantMediaSave</p>
-          </footer>
+        </div>
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="/about" data-no-translate>About</a>
+            <a href="/privacy" data-no-translate>Privacy Policy</a>
+        </div>
+        <p class="copyright">© 2025 InstantMediaSave. All rights reserved.</p>
+        <p class="made-with-love">Made with <span class="heart">❤️</span> by InstantMediaSave</p>
+    </footer>
     </div>
     <script src="script.js"></script>
     <script src="path-based-meta.js"></script>
     <script src="theme-toggle.js"></script>
-    <!--<script src="language-selector.js"></script>-->
+    <script src="netlify-translate-client.js"></script>
 </body>
 </html>
