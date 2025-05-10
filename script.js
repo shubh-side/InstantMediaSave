@@ -18,6 +18,22 @@ document.addEventListener('DOMContentLoaded', () => {
     // Store video URLs for audio extraction
     window.videoUrls = {};
 
+    window.pageType = window.pageType || getPageTypeFromPath();
+    
+    function getPageTypeFromPath() {
+        const path = window.location.pathname;
+        if (path.includes('reels-download')) return 'reels';
+        if (path.includes('photos-download')) return 'photos';
+        if (path.includes('stories-download')) return 'stories';
+        if (path.includes('igtv-download')) return 'igtv';
+        if (path.includes('carousel-download')) return 'carousel';
+        if (path.includes('videos-download')) return 'videos';
+        if (path.includes('audio-download')) return 'audio';
+        if (path.includes('about')) return 'about';
+        if (path.includes('privacy')) return 'privacy';
+        return 'home';
+    }
+
     // Handle Enter key press
     reelUrlInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') {
@@ -91,12 +107,27 @@ document.addEventListener('DOMContentLoaded', () => {
         } catch (error) {
             // Reset the download button state in case of error
             downloadBtn.disabled = false;
-            downloadBtn.textContent = 'Download';
+            downloadBtn.textContent = getDownloadButtonText();
         
             showDetailedError(error.message || 'An error occurred while downloading the content');
         }
     });
 
+    // Function to get appropriate download button text based on page
+    function getDownloadButtonText() {
+        const pageType = window.pageType;
+        const texts = {
+            'reels': 'Download Reel',
+            'photos': 'Download Photo',
+            'videos': 'Download Video',
+            'stories': 'Download Story',
+            'igtv': 'Download IGTV',
+            'carousel': 'Download Carousel',
+            'audio': 'Extract Audio'
+        };
+        return texts[pageType] || 'Download';
+    }
+    
     // Function to process API response and normalize it
     function processAPIResponse(data) {
         // Handle single content

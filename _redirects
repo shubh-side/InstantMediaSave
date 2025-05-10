@@ -1,13 +1,13 @@
 # Main tool pages
-/reels-download    /index.html    200
-/photos-download   /index.html    200
-/stories-download  /index.html    200
-/igtv-download     /index.html    200
-/carousel-download /index.html    200
-/videos-download   /index.html    200
-/audio-download    /index.html    200
-/about             /index.html    200
-/privacy           /index.html    200
+/reels-download /pages/reels-download.html 200
+/photos-download /pages/photos-download.html 200
+/stories-download /pages/stories-download.html 200
+/igtv-download /pages/igtv-download.html 200
+/carousel-download /pages/carousel-download.html 200
+/videos-download /pages/videos-download.html 200
+/audio-download /pages/audio-download.html 200
+/about /pages/about.html 200
+/privacy /pages/privacy.html 200
 
 # Language specific paths
 /es/*              /index.html    200
