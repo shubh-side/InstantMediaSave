@@ -1575,6 +1575,7 @@ button,
   position: relative;
 }
 
+/* Language selector styles */
 .language-selector {
   position: relative;
 }
@@ -1653,6 +1654,7 @@ button,
   pointer-events: none;
 }
 
+/* Translation loading indicator */
 .translation-loading {
   position: fixed;
   top: 0;
@@ -1682,6 +1684,7 @@ button,
   to { transform: rotate(360deg); }
 }
 
+/* Add styles for small screens */
 @media (max-width: 600px) {
   .site-header {
       margin-bottom: 20px;
@@ -1701,13 +1704,3 @@ button,
       right: -10px;
   }
 }
-
-.logo-icon {
-    width: 48px;
-    height: 48px;
-    display: inline-block;
-    font-size: 48px;
-    vertical-align: middle;
-}
-
-
